@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/home/peco/Projects/RayTracing/InOneWeekend/Camera.h
+Common.h
+/home/peco/Projects/RayTracing/InOneWeekend/Common.h
+
 /home/peco/Projects/RayTracing/InOneWeekend/Color.h
 Vec3.h
 /home/peco/Projects/RayTracing/InOneWeekend/Vec3.h
@@ -59,6 +63,8 @@ iostream
 /home/peco/Projects/RayTracing/InOneWeekend/main.cpp
 Common.h
 /home/peco/Projects/RayTracing/InOneWeekend/Common.h
+Camera.h
+/home/peco/Projects/RayTracing/InOneWeekend/Camera.h
 Sphere.h
 /home/peco/Projects/RayTracing/InOneWeekend/Sphere.h
 SurfaceList.h
