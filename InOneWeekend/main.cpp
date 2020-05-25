@@ -6,10 +6,13 @@
 
 #include <iostream>
 
-Color3 RayColor(const Ray &r, const Surface &world) {
+Color3 RayColor(const Ray &r, const Surface &world, int depth) {
   HitRecord rec;
-  if (world.Hit(r, 0, infinity, rec)) {
-    return 0.5 * (rec.normal + Color3(1, 1, 1));
+  if (depth <= 0)
+    return Color3(0, 0, 0);
+  if (world.Hit(r, 0.001, infinity, rec)) {
+    Point3 target = rec.p + rec.normal + RandomUnitVector();
+    return 0.5 * RayColor(Ray(rec.p, target - rec.p), world, depth - 1);
   }
   Vec3 direction = UnitVector(r.Endpoint());
   auto t = 0.5 * (direction.Y() + 1.0);
@@ -24,6 +27,7 @@ int main() {
   const int imageHeight = static_cast<int>(imageWidth / aspectRatio);
 
   const int samplesPerPixel = 100;
+  const int maxDepth = 3;
 
   std::cout << "P3\n" << imageWidth << ' ' << imageHeight << "\n255\n";
 
@@ -38,10 +42,10 @@ int main() {
     for (int i = 0; i < imageWidth; ++i) {
       Color3 pixelColor(0.0, 0.0, 0.0);
       for (int s = 0; s < samplesPerPixel; ++s) {
-        auto u = (i + Random()) / (imageWidth - 1);
-        auto v = (j + Random()) / (imageHeight - 1);
+        auto u = (i + RandomDouble()) / (imageWidth - 1);
+        auto v = (j + RandomDouble()) / (imageHeight - 1);
         Ray r = cam.GetRay(u, v);
-        pixelColor += RayColor(r, world);
+        pixelColor += RayColor(r, world, maxDepth);
       }
       WriteColor(std::cout, pixelColor, samplesPerPixel);
     }

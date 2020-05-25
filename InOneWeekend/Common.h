@@ -21,9 +21,9 @@ inline double Clamp(double x, double min, double max) {
   return x;
 }
 inline double DegreesToRadians(double d) { return d * pi / 180; }
-inline double Random() { return rand() / (RAND_MAX + 1.0); }
-inline double Random(double min, double max) {
-  return min + (max - min) * Random();
+inline double RandomDouble() { return rand() / (RAND_MAX + 1.0); }
+inline double RandomDouble(double min, double max) {
+  return min + (max - min) * RandomDouble();
 }
 
 // Common Headers

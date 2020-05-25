@@ -1,6 +1,8 @@
 #ifndef VEC3_H
 #define VEC3_H
 
+#include "Common.h"
+
 #include <cmath>
 #include <iostream>
 
@@ -42,6 +44,15 @@ public:
   }
 
   double Length() const { return sqrt(LengthSquared()); }
+
+  inline static Vec3 RandomVec() {
+    return Vec3(RandomDouble(), RandomDouble(), RandomDouble());
+  }
+
+  inline static Vec3 RandomVec(double min, double max) {
+    return Vec3(RandomDouble(min, max), RandomDouble(min, max),
+                RandomDouble(min, max));
+  }
 
 private:
   double e[3];
@@ -87,5 +98,21 @@ inline Vec3 Cross(const Vec3 &u, const Vec3 &v) {
 }
 
 inline Vec3 UnitVector(Vec3 v) { return v / v.Length(); }
+
+inline Vec3 RandomInUnitSphere() {
+  while (true) {
+    auto p = Vec3::RandomVec(-1, 1);
+    if (p.LengthSquared() >= 1)
+      continue;
+    return p;
+  }
+}
+
+inline Vec3 RandomUnitVector() {
+  auto a = RandomDouble(0, 2 * pi);
+  auto z = RandomDouble(-1, 1);
+  auto r = sqrt(1 - z * z);
+  return Vec3(r * cos(a), r * sin(a), z);
+}
 
 #endif

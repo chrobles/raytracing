@@ -55,6 +55,8 @@ vector
 -
 
 /home/peco/Projects/RayTracing/InOneWeekend/Vec3.h
+Common.h
+/home/peco/Projects/RayTracing/InOneWeekend/Common.h
 cmath
 -
 iostream

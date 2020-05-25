@@ -12,9 +12,9 @@ void WriteColor(std::ostream &out, Color3 pixelColor, int samplesPerPixel) {
 
   // Divide by number of samples.
   auto scale = 1.0 / samplesPerPixel;
-  r *= scale;
-  g *= scale;
-  b *= scale;
+  r = sqrt(scale * r);
+  g = sqrt(scale * g);
+  b = sqrt(scale * b);
 
   // Write the translated [0,255] value of each color component.
   out << static_cast<int>(255.999 * Clamp(r, 0.0, 0.999)) << ' '
