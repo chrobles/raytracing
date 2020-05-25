@@ -1,17 +1,20 @@
 #ifndef SURFACE_H
 #define SURFACE_H
 
-#include "Ray.h"
+#include "Material.h"
+
+class Material;
 
 struct HitRecord {
   Point3 p;
   Vec3 normal;
+  std::shared_ptr<Material> mat_ptr;
   double t;
-  bool frontFace;
+  bool front_face;
 
-  inline void SetFaceNormal(const Ray &r, const Vec3 &outwardNormal) {
-    frontFace = Dot(r.Endpoint(), outwardNormal) < 0;
-    normal = frontFace ? outwardNormal : -outwardNormal;
+  inline void SetFaceNormal(const Ray &r, const Vec3 &outward_normal) {
+    front_face = Dot(r.Endpoint(), outward_normal) < 0;
+    normal = front_face ? outward_normal : -outward_normal;
   }
 };
 

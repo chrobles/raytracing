@@ -91,6 +91,9 @@
 		<Unit filename="/home/peco/Projects/RayTracing/InOneWeekend/Common.h">
 			<Option target="RayTracingInOneWeekend"/>
 		</Unit>
+		<Unit filename="/home/peco/Projects/RayTracing/InOneWeekend/Material.h">
+			<Option target="RayTracingInOneWeekend"/>
+		</Unit>
 		<Unit filename="/home/peco/Projects/RayTracing/InOneWeekend/Ray.h">
 			<Option target="RayTracingInOneWeekend"/>
 		</Unit>
@@ -106,7 +109,13 @@
 		<Unit filename="/home/peco/Projects/RayTracing/InOneWeekend/Vec3.h">
 			<Option target="RayTracingInOneWeekend"/>
 		</Unit>
+		<Unit filename="/home/peco/Projects/RayTracing/InOneWeekend/lambertian.h">
+			<Option target="RayTracingInOneWeekend"/>
+		</Unit>
 		<Unit filename="/home/peco/Projects/RayTracing/InOneWeekend/main.cpp">
+			<Option target="RayTracingInOneWeekend"/>
+		</Unit>
+		<Unit filename="/home/peco/Projects/RayTracing/InOneWeekend/metal.h">
 			<Option target="RayTracingInOneWeekend"/>
 		</Unit>
 		<Unit filename="/home/peco/Projects/RayTracing/InOneWeekend/CMakeLists.txt">

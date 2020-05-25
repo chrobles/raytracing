@@ -1,6 +1,7 @@
 #ifndef SURFACELIST_H
 #define SURFACELIST_H
 
+#include "Ray.h"
 #include "Surface.h"
 
 #include <memory>

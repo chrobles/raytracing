@@ -26,10 +26,4 @@ inline double RandomDouble(double min, double max) {
   return min + (max - min) * RandomDouble();
 }
 
-// Common Headers
-
-#include "Color.h"
-#include "Ray.h"
-#include "Vec3.h"
-
 #endif // COMMON_H

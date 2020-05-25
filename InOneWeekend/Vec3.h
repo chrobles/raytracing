@@ -99,7 +99,7 @@ inline Vec3 Cross(const Vec3 &u, const Vec3 &v) {
 
 inline Vec3 UnitVector(Vec3 v) { return v / v.Length(); }
 
-inline Vec3 RandomInUnitSphere() {
+Vec3 RandomInUnitSphere() {
   while (true) {
     auto p = Vec3::RandomVec(-1, 1);
     if (p.LengthSquared() >= 1)
@@ -108,11 +108,13 @@ inline Vec3 RandomInUnitSphere() {
   }
 }
 
-inline Vec3 RandomUnitVector() {
+Vec3 RandomUnitVector() {
   auto a = RandomDouble(0, 2 * pi);
   auto z = RandomDouble(-1, 1);
   auto r = sqrt(1 - z * z);
   return Vec3(r * cos(a), r * sin(a), z);
 }
+
+Vec3 Reflect(const Vec3 &v, const Vec3 &n) { return v - 2 * Dot(v, n) * n; }
 
 #endif

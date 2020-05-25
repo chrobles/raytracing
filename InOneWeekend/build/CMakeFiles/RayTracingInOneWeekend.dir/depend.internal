@@ -5,9 +5,12 @@ CMakeFiles/RayTracingInOneWeekend.dir/main.cpp.o
  /home/peco/Projects/RayTracing/InOneWeekend/Camera.h
  /home/peco/Projects/RayTracing/InOneWeekend/Color.h
  /home/peco/Projects/RayTracing/InOneWeekend/Common.h
+ /home/peco/Projects/RayTracing/InOneWeekend/Material.h
  /home/peco/Projects/RayTracing/InOneWeekend/Ray.h
  /home/peco/Projects/RayTracing/InOneWeekend/Sphere.h
  /home/peco/Projects/RayTracing/InOneWeekend/Surface.h
  /home/peco/Projects/RayTracing/InOneWeekend/SurfaceList.h
  /home/peco/Projects/RayTracing/InOneWeekend/Vec3.h
+ /home/peco/Projects/RayTracing/InOneWeekend/lambertian.h
  /home/peco/Projects/RayTracing/InOneWeekend/main.cpp
+ /home/peco/Projects/RayTracing/InOneWeekend/metal.h

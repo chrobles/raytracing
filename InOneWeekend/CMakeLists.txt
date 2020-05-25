@@ -11,6 +11,9 @@ add_executable(
     Camera.h
     Color.h
     Common.h
+    lambertian.h
+    Material.h
+    metal.h
     Ray.h
     Sphere.h
     Surface.h
