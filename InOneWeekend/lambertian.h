@@ -1,9 +1,10 @@
 #ifndef LAMBERTIAN_H
 #define LAMBERTIAN_H
 
-#include "Material.h"
-#include "Ray.h"
-#include "Vec3.h"
+#include "material.h"
+#include "ray.h"
+#include "surface.h"
+#include "vec3.h"
 
 class Lambertian : public Material {
 public:

@@ -1,12 +1,12 @@
-#include "Common.h"
+#include "common.h"
 
-#include "Camera.h"
-#include "Color.h"
-#include "Sphere.h"
-#include "SurfaceList.h"
-#include "Vec3.h"
+#include "camera.h"
+#include "color.h"
 #include "lambertian.h"
 #include "metal.h"
+#include "sphere.h"
+#include "surface_list.h"
+#include "vec3.h"
 #include <iostream>
 
 Color3 RayColor(const Ray &r, const Surface &world, int depth) {

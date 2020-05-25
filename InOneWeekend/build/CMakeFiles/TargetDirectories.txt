@@ -1,3 +1,0 @@
-/home/peco/Projects/RayTracing/InOneWeekend/build/CMakeFiles/rebuild_cache.dir
-/home/peco/Projects/RayTracing/InOneWeekend/build/CMakeFiles/edit_cache.dir
-/home/peco/Projects/RayTracing/InOneWeekend/build/CMakeFiles/RayTracingInOneWeekend.dir

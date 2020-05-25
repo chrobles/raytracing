@@ -1,7 +1,7 @@
 #ifndef SURFACE_H
 #define SURFACE_H
 
-#include "Material.h"
+#include "material.h"
 
 class Material;
 

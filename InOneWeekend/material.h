@@ -1,9 +1,9 @@
 #ifndef MATERIAL_H
 #define MATERIAL_H
 
-#include "Ray.h"
-#include "Surface.h"
-#include "Vec3.h"
+#include "ray.h"
+#include "surface.h"
+#include "vec3.h"
 
 class Material {
 public:

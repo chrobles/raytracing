@@ -8,17 +8,17 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_executable(
     RayTracingInOneWeekend
 
-    Camera.h
-    Color.h
-    Common.h
+    camera.h
+    color.h
+    common.h
     lambertian.h
-    Material.h
+    material.h
     metal.h
-    Ray.h
-    Sphere.h
-    Surface.h
-    SurfaceList.h
-    Vec3.h
+    ray.h
+    sphere.h
+    surface.h
+    surface_list.h
+    vec3.h
 
     main.cpp
 )

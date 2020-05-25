@@ -1,9 +1,9 @@
 #ifndef SPHERE_H
 #define SPHERE_H
 
-#include "Material.h"
-#include "Surface.h"
-#include "Vec3.h"
+#include "material.h"
+#include "surface.h"
+#include "vec3.h"
 
 class Sphere : public Surface {
 public:

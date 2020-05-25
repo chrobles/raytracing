@@ -1,8 +1,8 @@
 #ifndef METAL_H
 #define METAL_H
 
-#include "Material.h"
-#include "Vec3.h"
+#include "material.h"
+#include "vec3.h"
 
 class Metal : public Material {
 public:
